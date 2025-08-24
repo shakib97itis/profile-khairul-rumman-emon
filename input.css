@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --font-sans: "Noto Serif Bengali", serif;
+}
+
+/* marquee start */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+/* marquee end */
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  color: #333;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  background: #4f46e5; /* Indigo */
+  color: #fff;
+  transform: scale(1.1);
+}

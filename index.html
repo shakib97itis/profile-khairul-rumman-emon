@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./input.css" />
+  <link rel="stylesheet" href="./output.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Bangla font (google font -- ) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>খাইরুল রুম্মান</title>
+
+  <link rel="icon" type="image/x-icon" href="./images/image1.jpg" />
+</head>
+
+<body class="relative">
+  <!-- navber started -->
+  <nav class="bg-gray-900 text-white px-8 md:px-16 py-4 flex items-center justify-between">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Left Side (Logo / Name) -->
+      <div class="text-xl md:text-2xl font-bold text-purple-400">
+        খাইরুল রুম্মান
+      </div>
+
+      <!-- Right Side (Menu) -->
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li>
+          <a href="#profile" class="hover:text-purple-400 transition">প্রোফাইল</a>
+        </li>
+        <li>
+          <a href="#about" class="hover:text-purple-400 transition">সম্পর্কে</a>
+        </li>
+        <li>
+          <a href="#promises" class="hover:text-purple-400 transition">ইশতেহার</a>
+        </li>
+        <li>
+          <a href="#achievement" class="hover:text-purple-400 transition">অ্যচিভমেন্ট</a>
+        </li>
+      </ul>
+
+      <!-- Mobile Hamburger Menu -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="focus:outline-none relative">
+          <!-- Hamburger Icon -->
+          <svg id="menu-open" class="w-6 h-6 block" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+
+          <!-- Close Icon -->
+          <svg id="menu-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="bg-gray-900 text-white max-h-0 transition-all duration-300 md:hidden">
+    <div class="px-8 py-4 space-y-4">
+      <a href="#profile" class="block hover:text-purple-400 transition">প্রোফাইল</a>
+      <a href="#about" class="block hover:text-purple-400 transition">সম্পর্কে</a>
+      <a href="#promises" class="block hover:text-purple-400 transition">ইশতেহার</a>
+      <a href="#achievement" class="block hover:text-purple-400 transition">অ্যচিভমেন্ট</a>
+    </div>
+  </div>
+  <!-- navber ended -->
+
+  <!-- profile section started -->
+  <section id="profile"
+    class="relative flex flex-col md:flex-row items-center justify-between md:min-h-screen px-8 md:px-16 py-12 md:py-0 overflow-hidden bg-gray-900">
+    <!-- Glow Background -->
+    <div class="absolute inset-0">
+      <div class="absolute w-[500px] h-[500px] bg-purple-600/30 rounded-full blur-[150px] top-10 left-20"></div>
+      <div class="absolute w-[400px] h-[400px] bg-blue-500/30 rounded-full blur-[150px] right-20 top-5"></div>
+    </div>
+
+    <div class="w-full flex flex-col items-center z-10 text-center md:text-left mb-10 md:mt-10 md:mb-0">
+      <p class="text-sm md:text-2xl font-semibold text-gray-300 text-center mb-4 leading-relaxed max-w-xl">
+        “সাহিত্য শুধুই শব্দ নয়, এটি মানুষের মনের জানালা। আমি চাই আমার কলম হোক
+        পরিবর্তনের হাতিয়ার।”
+      </p>
+
+      <div class="z-10 relative mb-0">
+        <img src="./images/avatarone.avif" alt="Profile"
+          class="rounded-full w-60 h-60 md:w-100 md:h-100 object-cover border-8 border-purple-500 shadow-lg" />
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 mt-8 text-white px-6 md:px-0">
+        <span class="text-purple-400">মোঃ</span> খাইরুল রুম্মান ইমন
+      </h1>
+      <h2 class="text-xl bg-gradient-to-b from-purple-600 to-transparent md:text-3xl font-semibold mb-2 text-white">
+        সাহিত্য সম্পাদক পদপ্রার্থী
+      </h2>
+      <span class="text-white px-3 py-1 rounded-full text-sm">
+        মুক্তিযোদ্ধা জিয়াউর রহমান হল সংসদ
+      </span>
+
+      <!-- Content Card -->
+      <div class="flex flex-col items-center mx-auto py-6 px-2 md:p-10 text-gray-300 space-y-5">
+        <p>
+          ঢাকা বিশ্ববিদ্যালয়ের
+          <span class="text-indigo-400 font-semibold">শিক্ষার্থী বাবর ছিলেন না</span>
+          বিভিন্ন
+          <span class="text-red-400 font-semibold">ফ্যাসিস্ট এর আক্রমণ</span>।
+          ডাকসু না থাকায় বিশ্ববিদ্যালয়ের
+          <span class="text-indigo-400 font-semibold">নীতিনির্ধারণে শিক্ষার্থীদের অংশগ্রহণ</span>
+          কমে গিয়েছে।
+        </p>
+
+        <p>
+          সরকারের ৯ প্রণোদনা যথাযথভাবে
+          <span class="text-red-400 font-semibold">প্রতিফলিত হয়নি</span>।
+          কমেছে শিক্ষার
+          <span class="text-indigo-400 font-semibold">গুণগত মান</span>।
+        </p>
+
+        <p>
+          তাই আমি ঢাকা বিশ্ববিদ্যালয়ের শিক্ষার্থীদের পক্ষে দাঁড়াতে আসন্ন
+          ২০২৫ নির্বাচনে
+          <span class="text-blue-400 font-bold">বিজ্ঞান ও প্রযুক্তি বিষয়ক সম্পাদক</span>
+          পদে প্রতিদ্বন্দ্বিতা করছি।
+        </p>
+
+        <p class="text-indigo-400 font-bold">
+          ভোট দেওয়ার দিন আপনার মূল্যবান ভোট দিয়ে আমাকে সমর্থন করুন এবং
+          ডিজিটাল বিশ্ববিদ্যালয় গড়ে তুলুন।
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- profile section ended -->
+
+  <!-- marquee section started -->
+  <section class="bg-gray-800 py-8 overflow-hidden">
+    <div class="relative flex whitespace-nowrap">
+      <!-- Animation Wrapper -->
+      <div class="animate-marquee flex space-x-12">
+        <div class="flex items-center space-x-12 text-purple-400 text-xl font-semibold">
+          <span>|</span>
+          <span>খাইরুল রুম্মান ভোট দিন</span>
+        </div>
+        <div class="flex items-center space-x-12 text-blue-400 text-xl font-semibold">
+          <span>|</span>
+          <span>৯ সেপ্টেম্বর ২০২৫</span>
+        </div>
+        <div class="flex items-center space-x-12 text-purple-400 text-xl font-semibold">
+          <span>|</span>
+          <span>কার্জন হল কেন্দ্র</span>
+        </div>
+        <div class="flex items-center space-x-12 text-blue-400 text-xl font-semibold">
+          <span>|</span>
+          <span>পরিবর্তনের পথে একসাথে চলুন </span>
+        </div>
+      </div>
+
+      <!-- Duplicate for Infinite Loop -->
+      <div class="animate-marquee flex space-x-12" aria-hidden="true">
+        <div class="flex items-center space-x-12 text-purple-400 text-xl font-semibold">
+          <span>|</span>
+          <span>খাইরুল রুম্মান ভোট দিন</span>
+        </div>
+        <div class="flex items-center space-x-12 text-blue-400 text-xl font-semibold">
+          <span>|</span>
+          <span>৯ সেপ্টেম্বর ২০২৫</span>
+        </div>
+        <div class="flex items-center space-x-12 text-purple-400 text-xl font-semibold">
+          <span>|</span>
+          <span>কার্জন হল কেন্দ্র</span>
+        </div>
+        <div class="flex items-center space-x-12 text-blue-400 text-xl font-semibold">
+          <span>|</span>
+          <span>পরিবর্তনের পথে একসাথে চলুন</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- marquee section ended -->
+
+  <!-- promises section started -->
+  <section class="bg-gray-900 text-white" id="promises">
+    <div class="container px-8 py-12 pt-16 mx-auto">
+      <div class="grid gap-4 sm:grid-cols-12">
+        <!-- Left Side Title -->
+        <div class="col-span-12 sm:col-span-3 md:pr-8">
+          <div
+            class="text-center sm:text-left mb-8 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-purple-500">
+            <h3 class="text-3xl font-semibold">আমার প্রতিশ্রুতি</h3>
+            <span class="text-sm font-bold tracking-wider uppercase text-gray-400">আপনার ভোটে আমি এগুলো করব</span>
+          </div>
+          <img class="w-full rounded-md mb-3 px-2 md:px-0" src="./images/DU.jpg" alt="" />
+        </div>
+
+        <!-- Right Side Timeline -->
+        <div class="relative col-span-12 space-y-6 sm:col-span-9">
+          <div class="col-span-12 space-y-6 relative sm:space-y-8">
+            <!-- Promise 1 -->
+            <div class="flex flex-col group border-l-4 border-purple-500 pl-4 rounded-lg bg-gray-800 py-2">
+              <h3 class="text-lg md:text-xl font-semibold tracking-wide group-hover:text-purple-400 transition">
+                সকল শিক্ষার্থীর জন্য বিনামূল্যে শিক্ষাসামগ্রী নিশ্চিত করব
+              </h3>
+              <p class="mt-3 text-gray-300 text-sm md:text-base">
+                আমার নির্বাচিত হলে, সকল শিক্ষার্থীর জন্য বই, নোট এবং অনলাইন
+                রিসোর্স বিনামূল্যে সরবরাহ করা হবে।
+              </p>
+            </div>
+            <!-- Promise 2 -->
+            <div class="flex flex-col group border-l-4 border-purple-500 pl-4 rounded-lg bg-gray-800 py-2">
+              <h3 class="text-lg md:text-xl font-semibold tracking-wide group-hover:text-purple-400 transition">
+                সাংস্কৃতিক কার্যক্রমকে সমৃদ্ধ করব
+              </h3>
+              <p class="mt-3 text-gray-300 text-sm md:text-base">
+                শিক্ষার্থীদের জন্য সাহিত্য, নাটক ও সাংস্কৃতিক ক্লাবগুলোকে আরও
+                সক্রিয় ও সমৃদ্ধ করা হবে।
+              </p>
+            </div>
+            <!-- Promise 3 -->
+            <div class="flex flex-col group border-l-4 border-purple-500 pl-4 rounded-lg bg-gray-800 py-2">
+              <h3 class="text-lg md:text-xl font-semibold tracking-wide group-hover:text-purple-400 transition">
+                পরিষ্কার ও সুরক্ষিত হলের পরিবেশ নিশ্চিত করব
+              </h3>
+              <p class="mt-3 text-gray-300 text-sm md:text-base">
+                শৌচাগার, লাইটিং, এবং নিরাপত্তা ব্যবস্থা উন্নত করে,
+                ছাত্রছাত্রীদের জন্য একটি নিরাপদ ও আরামদায়ক পরিবেশ গঠন করা
+                হবে।
+              </p>
+            </div>
+            <!-- Promise 4 -->
+            <div class="flex flex-col group border-l-4 border-purple-500 pl-4 rounded-lg bg-gray-800 py-2">
+              <h3 class="text-lg md:text-xl font-semibold tracking-wide group-hover:text-purple-400 transition">
+                পরিষ্কার ও সুরক্ষিত হলের পরিবেশ নিশ্চিত করব
+              </h3>
+              <p class="mt-3 text-gray-300 text-sm md:text-base">
+                শৌচাগার, লাইটিং, এবং নিরাপত্তা ব্যবস্থা উন্নত করে,
+                ছাত্রছাত্রীদের জন্য একটি নিরাপদ ও আরামদায়ক পরিবেশ গঠন করা
+                হবে।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- promises section ended -->
+
+  <!-- achievement section started -->
+  <section id="achievement" class="relative bg-gray-900 text-white py-12 overflow-hidden">
+    <div class="container mx-auto flex flex-col items-start md:flex-row md:my-24 relative z-10">
+      <!-- Left Side Text -->
+      <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
+        <p class="text-purple-400 uppercase tracking-loose">আমার অর্জনসমূহ</p>
+        <p class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">
+          অর্জন ও কার্যক্রমের বিবরণ
+        </p>
+        <p class="text-sm md:text-base text-gray-300 mb-4">
+          এখানে আমার নির্বাচিত হলে করা কিছু গুরুত্বপূর্ণ অর্জন ও প্রতিশ্রুতির
+          ধাপ দেখানো হলো।
+        </p>
+      </div>
+
+      <!-- Right Side Timeline -->
+      <div class="ml-0 md:ml-12 lg:w-2/3 sticky">
+        <div class="relative wrap overflow-hidden py-10 px-5 h-full">
+          <!-- Vertical Line -->
+          <div class="absolute h-full border left-1/2 border-purple-500/50" style="border-width: 2px"></div>
+
+          <!-- Achievement Item 1 -->
+          <div class="mb-5 md:mb-12 relative flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <!-- Glow -->
+            <div class="absolute w-20 h-20 bg-purple-500/80 rounded-full blur-[70px] -left-3 top-1/2 -translate-y-1/2">
+            </div>
+
+            <!-- Image opposite side -->
+            <div class="order-1 w-5/12 flex justify-center">
+              <img src="./images/avatartwo.avif" alt="Achievement Image"
+                class="w-40 h-32 object-cover rounded-xl shadow-lg transform rotate-3" />
+            </div>
+
+            <!-- Text -->
+            <div class="order-1 w-5/12 px-1 py-4 text-right">
+              <p class="mb-3 text-base text-purple-400">২০২০-২১</p>
+              <h4 class="mb-3 font-bold text-lg md:text-2xl">
+                সাহিত্য সম্পাদক পদপ্রার্থী হওয়া
+              </h4>
+              <p class="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
+                আমি নির্বাচিত হলে, সাহিত্য সম্পাদক পদে দায়িত্ব পালন করতে সক্ষম
+                হই।
+              </p>
+            </div>
+          </div>
+
+          <!-- Achievement Item 2 -->
+          <div class="mb-5 md:mb-12 relative flex justify-between items-center w-full right-timeline">
+            <!-- Glow -->
+            <div class="absolute w-30 h-30 bg-blue-400/80 rounded-full blur-[90px] -right-3 top-1/2 -translate-y-1/2">
+            </div>
+
+            <!-- Image opposite side -->
+            <div class="order-1 w-5/12 flex justify-center">
+              <img src="./images/avatarthree.avif" alt="Achievement Image"
+                class="w-40 h-32 object-cover rounded-xl shadow-lg transform rotate-3" />
+            </div>
+
+            <!-- Text -->
+            <div class="order-1 w-5/12 px-1 py-4 text-left">
+              <p class="mb-3 text-base text-purple-400">২০২১</p>
+              <h4 class="mb-3 font-bold text-lg md:text-2xl">
+                সাংস্কৃতিক কার্যক্রম আয়োজন
+              </h4>
+              <p class="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
+                শিক্ষার্থীদের জন্য সাহিত্য ও নাটক অনুষ্ঠানগুলো সফলভাবে আয়োজন
+                করা হয়।
+              </p>
+            </div>
+          </div>
+
+          <!-- Achievement Item 3 -->
+          <div class="mb-5 md:mb-12 relative flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <!-- Glow -->
+            <div class="absolute w-30 h-30 bg-purple-500/80 rounded-full blur-[90px] -left-3 top-3 -translate-y-1/2">
+            </div>
+
+            <!-- Image opposite side -->
+            <div class="order-1 w-5/12 flex justify-center">
+              <img src="./images/avatarfour.avif" alt="Achievement Image"
+                class="w-40 h-32 object-cover rounded-xl shadow-lg transform rotate-3" />
+            </div>
+
+            <!-- Text -->
+            <div class="order-1 w-5/12 px-1 py-4 text-right">
+              <p class="mb-3 text-base text-purple-400">২০২১</p>
+              <h4 class="mb-3 font-bold text-lg md:text-2xl">
+                পরিষ্কার ও সুরক্ষিত হল নিশ্চিতকরণ
+              </h4>
+              <p class="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
+                ছাত্রছাত্রীদের জন্য হলের নিরাপদ ও পরিচ্ছন্ন পরিবেশ নিশ্চিত করা
+                হয়।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- achievement section ended -->
+
+  <!-- poster slider section started -->
+  <div class="w-full bg-gray-900 p-6">
+    <div class="relative w-full max-w-3xl mx-auto overflow-hidden rounded-lg shadow-lg">
+      <!-- Slides Wrapper -->
+      <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+        <!-- Slide 1 -->
+        <div class="w-full flex-shrink-0">
+          <img src="./images/poster.jpg" class="w-full object-contain" />
+        </div>
+        <!-- Slide 2 -->
+        <div class="w-full flex-shrink-0">
+          <img src="./images/poster.jpg" class="w-full object-contain" />
+        </div>
+        <!-- Slide 3 -->
+        <div class="w-full flex-shrink-0">
+          <img src="./images/poster.jpg" class="w-full object-contain" />
+        </div>
+        <!-- Slide 4 -->
+        <div class="w-full flex-shrink-0">
+          <img src="./images/poster.jpg" class="w-full object-contain" />
+        </div>
+      </div>
+
+      <!-- Left Button -->
+      <button id="prev"
+        class="absolute top-1/2 left-2 -translate-y-1/2 bg-gray-500/50 text-white w-9 h-9 rounded-full cursor-pointer">
+        ❮
+      </button>
+
+      <!-- Right Button -->
+      <button id="next"
+        class="absolute top-1/2 right-2 -translate-y-1/2 bg-gray-500/50 text-white w-9 h-9 rounded-full cursor-pointer">
+        ❯
+      </button>
+
+      <!-- Dots -->
+      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+        <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer"></span>
+        <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer"></span>
+        <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer"></span>
+        <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer"></span>
+      </div>
+    </div>
+  </div>
+  <!-- poster slider section ended -->
+
+  <!-- how to vote section started -->
+  <section id="how-to-vote" class="bg-gray-900 text-white py-16 relative">
+    <div class="container mx-auto px-6 lg:px-12">
+      <!-- Heading -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-purple-400">
+          কিভাবে ভোট দিবেন
+        </h2>
+        <p class="mt-3 text-gray-300">
+          মোঃ খাইরুল রুম্মান ইমনকে ভোট দিন এবং পরিবর্তনের পথে একসাথে চলুন
+        </p>
+      </div>
+
+      <!-- Voting Details -->
+      <div class="">
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold text-purple-300">
+            ভোটের তারিখ ও সময়
+          </h3>
+          <p class="mt-2 text-gray-300">
+            ৯ সেপ্টেম্বর ২০২৫<br />
+            সকাল ৮টা থেকে বিকাল ৩টা
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-purple-300">
+            যেসব কেন্দ্রে ভোট দিতে পারবেন
+          </h3>
+          <ul class="mt-4 space-y-2 text-gray-300 list-disc list-inside">
+            <li>কার্জন হল কেন্দ্র</li>
+            <li>শারীরিক শিক্ষা কেন্দ্র</li>
+            <li>ছাত্র-শিক্ষক কেন্দ্র</li>
+            <li>ঢাকা বিশ্ববিদ্যালয় ক্লাব কেন্দ্র</li>
+            <li>সিনেট ভবন কেন্দ্র</li>
+            <li>উদয়ন স্কুল এন্ড কলেজ</li>
+            <li>ভূতত্ত্ব বিভাগ</li>
+            <li>ইউ ল্যাব স্কুল এন্ড কলেজ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- how to vote section ended -->
+
+  <!-- contact section started -->
+  <section id="contact" class="bg-gray-900 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- Heading -->
+      <h1 class="text-4xl md:text-5xl font-bold text-center text-white uppercase tracking-wide mb-12">
+        Contact
+      </h1>
+
+      <!-- Wrapper -->
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Left Form -->
+        <form class="space-y-4">
+          <input type="text" placeholder="Name" required
+            class="w-full px-4 py-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+
+          <input type="email" placeholder="Email" required
+            class="w-full px-4 py-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+
+          <textarea rows="6" placeholder="Message" required
+            class="w-full px-4 py-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+
+          <button type="submit"
+            class="w-full flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-3 rounded-lg transition duration-300">
+            <i class="fa fa-paper-plane"></i> Send
+          </button>
+        </form>
+
+        <!-- Right Contact Info -->
+        <div class="space-y-6 text-gray-300">
+          <!-- Address -->
+          <div class="flex items-center gap-4">
+            <i class="fa fa-map-marker text-indigo-500 text-xl"></i>
+            <span class="text-lg">City, State</span>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-center gap-4">
+            <i class="fa fa-phone text-indigo-500 text-xl"></i>
+            <a href="tel:1-212-555-2368" class="text-lg hover:text-indigo-400 transition">
+              (212) 555-2368
+            </a>
+          </div>
+
+          <!-- Email -->
+          <div class="flex items-center gap-4">
+            <i class="fa fa-envelope text-indigo-500 text-xl"></i>
+            <a href="mailto:hitmeup@gmail.com" class="text-lg hover:text-indigo-400 transition">
+              hitmeup@gmail.com
+            </a>
+          </div>
+
+          <!-- Divider -->
+          <hr class="border-gray-700" />
+
+          <!-- Social Icons -->
+          <ul class="flex gap-4 justify-start">
+            <!-- Facebook -->
+            <li>
+              <a href="#" target="_blank" class="social-icon-dark">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+
+            <!-- Instagram -->
+            <li>
+              <a href="#" target="_blank" class="social-icon-dark">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+
+            <!-- LinkedIn -->
+            <li>
+              <a href="#" target="_blank" class="social-icon-dark">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact section ended -->
+
+  <!-- footer section started -->
+  <footer class="bg-gray-800 text-gray-300 py-6">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+      <!-- Left: Project Name -->
+      <div class="text-lg font-semibold text-purple-400">খাইরুল রুম্মান</div>
+
+      <!-- Right: Creator -->
+      <div class="text-sm mt-3 md:mt-0 text-center md:text-right">
+        <p>© 2025. All Rights Reserved.</p>
+        <p>
+          Created by
+          <span class="text-purple-400 font-semibold">IT Bird</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section ended -->
+
+  <!-- scroll top button started -->
+  <button id="scrollTopBtn"
+    class="fixed bottom-6 right-6 z-50 bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-full shadow-lg opacity-0 pointer-events-none transition-opacity duration-300">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  <!-- scroll top button ended -->
+  <script src="./main.js"></script>
+</body>
+
+</html>
