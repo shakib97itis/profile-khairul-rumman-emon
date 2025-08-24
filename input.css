@@ -8,6 +8,13 @@ html {
   --font-sans: "Noto Serif Bengali", serif;
 }
 
+.container-fluid {
+  max-width: 1440px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;}
+
 /* marquee start */
 @keyframes marquee {
   0% {

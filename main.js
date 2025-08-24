@@ -7,7 +7,7 @@ const menuCloseIcon = document.getElementById("menu-close");
 menuBtn.addEventListener("click", () => {
   if (mobileMenu.classList.contains("max-h-0")) {
     mobileMenu.classList.remove("max-h-0");
-    mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px"; // dynamic height
+    mobileMenu.style.maxHeight =  "176px"; // dynamic height
   } else {
     mobileMenu.style.maxHeight = "0px";
     mobileMenu.classList.add("max-h-0");
