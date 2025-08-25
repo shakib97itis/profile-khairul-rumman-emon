@@ -79,7 +79,7 @@
   <!-- navbar end -->
 
   <!-- profile section started -->
-  <section id="profile" class="relative overflow-hidden bg-gray-900 py-10 md:py-20 ">
+  <section id="profile" class="relative overflow-hidden bg-gray-900 py-16 md:py-20 ">
     <!-- Glow Background -->
     <div class="absolute inset-0">
       <div class="absolute w-[500px] h-[500px] bg-purple-600/30 rounded-full blur-[150px] top-10 left-20"></div>
@@ -94,7 +94,7 @@
       </p>
 
       <div class="md:flex md:items-center md:justify-center gap-20">
-        <div class="flex flex-col items-center mb-12 md:mb-0">
+        <div class="flex flex-col items-center mb-10 md:mb-0">
           <div class="relative mb-6">
             <img src="./images/avatarone.avif" alt="Profile"
               class="rounded-full w-60 h-60 md:w-100 md:h-100 object-cover border-8 border-purple-500 shadow-lg" />
@@ -188,7 +188,7 @@
     <div class="container-fluid py-16 md:py-20">
       <div class="grid gap-4 sm:grid-cols-12 ">
         <!-- Left Side Title -->
-        <div class="col-span-12 sm:col-span-4 md:pr-10">
+        <div class="col-span-12 sm:col-span-4 md:pr-10 mb-4">
           <div
             class="mb-8 before:block before:w-24 before:h-2 before:mb-5 before:rounded-md  sm:before:mx-0 before:bg-purple-500">
             <h3 class="text-3xl font-semibold">আমার প্রতিশ্রুতি</h3>
@@ -251,22 +251,23 @@
 
   <!-- achievement section started -->
   <section id="achievement" class="relative bg-gray-900 text-white pb-16 overflow-hidden">
-    <div class="container-fluid flex flex-col md:flex-row justify-between gap-8 md:gap-20">
+    <div class="max-w-[1440px] mx-auto grid grid-cols-12 gap-4">
       <!-- Left Side Text -->
-      <div class="grow-0 max-w-full md:max-w-[400px]">
+      <div class="col-span-12 px-6 md:pr-10 md:col-span-4 mb-6">
         <div
           class="mb-8 before:block before:w-24 before:h-2 before:mb-5 before:rounded-md  sm:before:mx-0 before:bg-purple-500">
           <h3 class="text-3xl font-semibold">আমার অর্জনসমূহ</h3>
           <span class="text-sm font-bold tracking-wider uppercase text-gray-400">অর্জন ও কার্যক্রমের বিবরণ</span>
         </div>
         <img class="w-full block rounded-md md:mb-6" src="./images/DU.jpg" alt="" />
-        <p class="text-gray-300 text-sm md:text-base hidden md:block">২০২০-২১ সালে সাহিত্য সম্পাদক পদপ্রার্থী হয়ে দায়িত্ব পালনের অঙ্গীকার করা হয়। পরবর্তীতে শিক্ষার্থীদের জন্য
+        <p class="text-gray-300 text-sm md:text-base hidden md:block">২০২০-২১ সালে সাহিত্য সম্পাদক পদপ্রার্থী হয়ে
+          দায়িত্ব পালনের অঙ্গীকার করা হয়। পরবর্তীতে শিক্ষার্থীদের জন্য
           সাহিত্য ও নাটক অন্তর্ভুক্ত সাংস্কৃতিক কর্মসূচি সফলভাবে আয়োজন করা হয়। পাশাপাশি, ছাত্রছাত্রীদের জন্য হলের
           নিরাপদ ও পরিচ্ছন্ন পরিবেশ নিশ্চিত করতে পরিষ্কার-পরিচ্ছন্নতা ও সুরক্ষিত হল ব্যবস্থার পদক্ষেপ নেওয়া হয়।</p>
       </div>
 
       <!-- Right Side Timeline -->
-      <div class="lg:w-2/3 sticky grow">
+      <div class="sticky grow col-span-12 md:col-span-8">
         <div class="relative wrap overflow-hidden px-5 h-full">
           <!-- Vertical Line -->
           <div class="absolute h-full border left-1/2 border-purple-500/50" style="border-width: 2px"></div>
@@ -352,49 +353,51 @@
   <!-- achievement section ended -->
 
   <!-- poster slider section started -->
-  <div class="w-full bg-gray-900 p-6">
-    <div class="relative w-full max-w-3xl mx-auto overflow-hidden rounded-lg shadow-lg">
-      <!-- Slides Wrapper -->
-      <div id="slider" class="flex transition-transform duration-700 ease-in-out">
-        <!-- Slide 1 -->
-        <div class="w-full flex-shrink-0">
-          <img src="./images/poster.jpg" class="w-full object-contain" />
+  <section class="w-full bg-gray-900">
+    <div class="container-fluid">
+      <div class="relative w-full max-w-3xl mx-auto overflow-hidden rounded-lg shadow-lg">
+        <!-- Slides Wrapper -->
+        <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+          <!-- Slide 1 -->
+          <div class="w-full flex-shrink-0">
+            <img src="./images/poster.jpg" class="w-full object-contain" />
+          </div>
+          <!-- Slide 2 -->
+          <div class="w-full flex-shrink-0">
+            <img src="./images/poster.jpg" class="w-full object-contain" />
+          </div>
+          <!-- Slide 3 -->
+          <div class="w-full flex-shrink-0">
+            <img src="./images/poster.jpg" class="w-full object-contain" />
+          </div>
+          <!-- Slide 4 -->
+          <div class="w-full flex-shrink-0">
+            <img src="./images/poster.jpg" class="w-full object-contain" />
+          </div>
         </div>
-        <!-- Slide 2 -->
-        <div class="w-full flex-shrink-0">
-          <img src="./images/poster.jpg" class="w-full object-contain" />
-        </div>
-        <!-- Slide 3 -->
-        <div class="w-full flex-shrink-0">
-          <img src="./images/poster.jpg" class="w-full object-contain" />
-        </div>
-        <!-- Slide 4 -->
-        <div class="w-full flex-shrink-0">
-          <img src="./images/poster.jpg" class="w-full object-contain" />
-        </div>
-      </div>
 
-      <!-- Left Button -->
-      <button id="prev"
-        class="absolute top-1/2 left-2 -translate-y-1/2 bg-gray-500/50 text-white w-9 h-9 rounded-full cursor-pointer">
-        ❮
-      </button>
+        <!-- Left Button -->
+        <button id="prev"
+          class="absolute top-1/2 left-2 -translate-y-1/2 bg-gray-500/50 text-white w-9 h-9 rounded-full cursor-pointer">
+          ❮
+        </button>
 
-      <!-- Right Button -->
-      <button id="next"
-        class="absolute top-1/2 right-2 -translate-y-1/2 bg-gray-500/50 text-white w-9 h-9 rounded-full cursor-pointer">
-        ❯
-      </button>
+        <!-- Right Button -->
+        <button id="next"
+          class="absolute top-1/2 right-2 -translate-y-1/2 bg-gray-500/50 text-white w-9 h-9 rounded-full cursor-pointer">
+          ❯
+        </button>
 
-      <!-- Dots -->
-      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
-        <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer"></span>
-        <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer"></span>
-        <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer"></span>
-        <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer"></span>
+        <!-- Dots -->
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+          <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer"></span>
+          <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer"></span>
+          <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer"></span>
+          <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer"></span>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- poster slider section ended -->
 
   <!-- how to vote section started -->
