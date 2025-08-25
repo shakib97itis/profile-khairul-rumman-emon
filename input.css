@@ -5,15 +5,17 @@ html {
 }
 
 @theme {
-  --font-sans: "Noto Serif Bengali", serif;
+  --font-sans: "Noto Sans Bengali", sans-serif;
+  --font-serif: "Noto Serif Bengali", serif;
 }
 
 .container-fluid {
   max-width: 1440px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   margin-right: auto;
-  margin-left: auto;}
+  margin-left: auto;
+}
 
 /* marquee start */
 @keyframes marquee {
