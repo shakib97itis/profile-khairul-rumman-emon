@@ -48,11 +48,13 @@ export default async (request) => {
         // Private key is optional but recommended if enabled in your EmailJS account
         accessToken: process.env.EMAILJS_PRIVATE_KEY || undefined,
         template_params: {
-            from_name: name,
-            reply_to: email,
+            name: name,
+            email: email,
             message: message,
         },
     };
+
+    console.log(payload);
 
     // Call EmailJS REST API
     const resp = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
