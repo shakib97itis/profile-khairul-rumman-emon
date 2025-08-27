@@ -130,22 +130,3 @@ scrollBtn.addEventListener("click", () => {
 });
 // scroll top button ended
 
-// contact form started
-document.getElementById('contact-form').addEventListener('submit', (e) => {
-  console.log("WORKING")
-  e.preventDefault();
-
-  const name = e.target[0].value;
-  const email = e.target[1].value;
-  const message = e.target[2].value;
-
-  const templateParams = {
-    name,
-    email,
-    message
-  }
-  console.log(templateParams)
-  emailjs.send("service_awfmp2r", "template_935xakn", templateParams);
-});
-// contact form ended
-
