@@ -29,9 +29,44 @@
   --color-neutral-3: #fafafa; /* almost white, for backgrounds */
 }
 
+/* FONT PRIMARY */
+@font-face {
+  font-family: "Li Ador Noirrit";
+  src: local("Li Ador Noirrit"), local("LiAdorNoirrit"),
+    url("../fonts/subset-LiAdorNoirrit.woff2") format("woff2"),
+    url("../fonts/subset-LiAdorNoirrit.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* FONT SECONDARY */
+@font-face {
+  font-family: "Li Alinur Sangbadpatra Unicode";
+  src: local("Li Alinur Sangbadpatra Unicode"),
+    local("LiAlinurSangbadpatraUnicode"),
+    url("../fonts/subset-LiAlinurSangbadpatraUnicode.woff2") format("woff2"),
+    url("../fonts/subset-LiAlinurSangbadpatraUnicode.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* FONT TERTIARY */
+@font-face {
+  font-family: "Li Alinur Kurigram Unicode";
+  src: local("Li Alinur Kurigram Unicode"), local("LiAlinurKurigramUnicode"),
+    url("../fonts/subset-LiAlinurKurigramUnicode.woff2") format("woff2"),
+    url("../fonts/subset-LiAlinurKurigramUnicode.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-  --font-primary: "Noto Sans Bengali", sans-serif;
-  --font-secondary: "Noto Serif Bengali", serif;
+  --font-primary: "Li Ador Noirrit", sans-serif;
+  --font-secondary: "Li Alinur Sangbadpatra Unicode", sans-serif;
+  --font-tertiary: "Li Alinur Kurigram Unicode", sans-serif;
 
   --color-primary: var(--color-primary);
   --color-secondary: var(--color-secondary);
