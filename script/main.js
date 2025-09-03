@@ -130,3 +130,31 @@ scrollBtn.addEventListener("click", () => {
 });
 // scroll top button ended
 
+// contact form started
+const loading = document.getElementById("status");
+
+const serviceID = "service_awfmp2r";
+const templateID = "template_935xakn";
+
+document.getElementById('contact-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  loading.textContent = "Sending...";
+
+  const name = e.target[0].value;
+  const email = e.target[1].value;
+  const thought = e.target[2].value;
+  const message = e.target[3].value;
+
+  const templateParams = {
+    name,
+    email,
+    thought,
+    message
+  }
+
+  const result = await emailjs.send(serviceID, templateID, templateParams);
+  e.target.reset();
+  loading.textContent = "Message sent ✅";
+});
+// contact form end

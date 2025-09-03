@@ -16,11 +16,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap" rel="stylesheet">
-  <title>মোঃ খাইরুল রুম্মান ইমন</title>
   <link rel="icon" type="image/x-icon" href="./images/image1.jpg" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "sYI3At1AVkWAyPAyB",
+      });
+    })();
+  </script>
+  <title>মোঃ খাইরুল রুম্মান ইমন</title>
 </head>
 
-<body class="relative font-serif">
+<body class="relative font-primary">
   <!-- navbar started -->
   <div class="fixed top-0 left-0 w-full z-50">
     <nav class="bg-gray-900 text-white py-4">
@@ -69,7 +77,8 @@
       </div>
     </nav>
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="bg-gray-900 overflow-hidden text-white max-h-0 transition-all duration-300 md:hidden font-primary">
+    <div id="mobile-menu"
+      class="bg-gray-900 overflow-hidden text-white max-h-0 transition-all duration-300 md:hidden font-primary">
       <div class="px-8 py-4 space-y-4">
         <a href="#profile" class="block hover:text-purple-400 transition">প্রোফাইল</a>
         <a href="#about" class="block hover:text-purple-400 transition">সম্পর্কে</a>
@@ -91,7 +100,7 @@
 
     <div class="z-10 relative container-fluid">
       <p
-        class="text-base font-tertiary italic md:text-2xl md:font-semibold text-gray-300 text-center mb-8 md:mb-16 leading-relaxed max-w-xl mx-auto">
+        class="text-base font-tertiary italic md:text-2xl  text-gray-300 text-center mb-8 md:mb-16 leading-relaxed max-w-xl mx-auto">
         “ সাহিত্য সভ্যতাকে এগিয়ে নেয়। মানুষকে বুঝতে ও বাঁচতে শেখায়। আসুন সম্ভাবনার পথকে অবারিত করি ”
       </p>
 
@@ -107,7 +116,7 @@
           </h1>
 
           <h2
-            class="text-xl bg-gradient-to-b px-6 py-2 font-primary rounded-sm mb-3 from-purple-600 to-transparent md:text-3xl font-semibold text-white">
+            class="text-xl bg-gradient-to-b px-6 py-2 font-tertiary rounded-sm mb-3 from-purple-600 to-transparent md:text-3xl text-white">
             সাহিত্য সম্পাদক পদপ্রার্থী
           </h2>
 
@@ -119,8 +128,8 @@
           </span>
         </div>
         <!-- Content Card -->
-        <div id="about" class=" text-gray-300 space-y-4 max-w-lg md:mb-20 text-lg text-justify font-primary">
-          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-left font-tertiary">আমার সম্পর্কে</h2>
+        <div id="about" class=" text-gray-300 space-y-4 max-w-lg md:mb-20 text-lg text-justify">
+          <h2 class="text-3xl md:text-4xl mb-6 text-left font-tertiary">আমার সম্পর্কে</h2>
           <p>
             আমি মোঃ খাইরুল রুম্মান ইমন, <span class="font-semibold text-purple-400">ঢাকা বিশ্ববিদ্যালয়ের আরবি বিভাগের
               ৪র্থ বর্ষের শিক্ষার্থী</span> এবং মুক্তিযোদ্ধা জিয়াউর রহমান হলের আবাসিক। আমি একজন তরুণ, কর্মঠ, সৎ ও দক্ষ
@@ -205,8 +214,9 @@
         <div class="col-span-12 sm:col-span-4 md:pr-10 mb-4">
           <div
             class="mb-8 before:block before:w-24 before:h-2 before:mb-5 before:rounded-md  sm:before:mx-0 before:bg-purple-500">
-            <h3 class="text-3xl  font-tertiary">আপনার জন্য আমার প্রতিশ্রুতি</h3>
-            <span class="text-sm tracking-wider uppercase text-gray-400 font-primary">“আমার লক্ষ্য সৃজনশীল চিন্তার বিকাশ ও
+            <h3 class="text-3xl font-tertiary">আপনার জন্য আমার প্রতিশ্রুতি</h3>
+            <span class="text-sm tracking-wider uppercase text-gray-400 font-primary">“আমার লক্ষ্য সৃজনশীল চিন্তার বিকাশ
+              ও
               সাহিত্য-সংস্কৃতির নবজাগরণ।
               নৈতিক ও মানবিক মূল্যবোধের চর্চা এবং স্বাধীনচেতা শিক্ষার্থীদের কলমকে শানিত করাই আমার অঙ্গীকার।
               জিয়া হল সাহিত্য সংসদ হবে চিন্তা, গবেষণা ও সাংস্কৃতিক চর্চার এক উন্মুক্ত মঞ্চ।”
@@ -493,7 +503,8 @@
       <h1 class="text-4xl md:text-5xl text-center font-tertiary text-white uppercase tracking-wide mb-4">
         আমার প্রতি আপনার প্রত্যাশা
       </h1>
-      <p class="text-center text-gray-300 font-primary mb-12">আপনার মনের কথাগুলো আমাকে বলুন।আমার প্রতি আপনার প্রত্যাশাগুলোও বলে
+      <p class="text-center text-gray-300 font-primary mb-12">আপনার মনের কথাগুলো আমাকে বলুন।আমার প্রতি আপনার
+        প্রত্যাশাগুলোও বলে
         ফেলুন। আমার প্রতি আপনার পরামর্শ থাকলে দিন। </p>
 
       <!-- Wrapper -->
@@ -539,9 +550,9 @@
             class="w-full px-4 py-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
           <!-- Honeypot (hide with CSS: display:none) -->
           <input name="_hp" type="text" tabindex="-1" autocomplete="off" style="display:none" />
-          
+
           <button type="submit" id="status"
-            class="w-full flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-3 rounded-lg transition duration-300">
+            class="w-full flex items-center cursor-pointer justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-3 rounded-lg transition duration-300">
             <i class="fa fa-paper-plane"></i> পাঠিয়ে দিন
           </button>
         </form>
@@ -578,33 +589,6 @@
 
   <!-- scroll top button ended -->
   <script src="./script/main.js"></script>
-  <!-- EMAIL JS -->
-  <script>
-    const form = document.getElementById("contact-form");
-    const status = document.getElementById("status");
-
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      status.textContent = "Sending...";
-
-      const data = Object.fromEntries(new FormData(form).entries());
-
-      try {
-        const res = await fetch("/.netlify/functions/send-email", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data),
-        });
-
-        if (!res.ok) throw new Error(await res.text());
-        status.textContent = "Message sent ✅";
-        form.reset();
-      } catch (err) {
-        status.textContent = "Failed to send. Please try again.";
-        console.error(err);
-      }
-    });
-  </script>
 </body>
 
 </html>
